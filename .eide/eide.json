@@ -13,7 +13,9 @@
   "outDir": "build",
   "deviceName": null,
   "packDir": null,
-  "miscInfo": {},
+  "miscInfo": {
+    "uid": "a87171cfe219b509ca28442cc37b43e4"
+  },
   "targets": {
     "Debug": {
       "excludeList": [],
