@@ -53,4 +53,8 @@ void Delay500ms(void)
 void Timer0_ISR(void) interrupt 1
 {
     timer_count++; // 每次中断计数器加1
+    TH0  = (65536 - 1000) >> 8; // 重装初值
+    TL0  = (65536 - 1000) & 0xFF;
+
+    TF0 = 0; // 清除TF0标志
 }
